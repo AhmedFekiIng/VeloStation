@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">stationsVelos</string>
+    <string name="last_update">Last Update:</string>
+    <string name="number">Number:</string>
+    <string name="name">Name:</string>
+    <string name="address">Address:</string>
+    <string name="status">Status:</string>
+    <string name="contract_name">Contract Name:</string>
+    <string name="banking">Banking:</string>
+    <string name="bonus">Bonus:</string>
+    <string name="connected">Connected:</string>
+    <string name="stand_availability">Total Stand</string>
+    <string name="availabilities">Availabilities:</string>
+    <string name="_1_2_3">1, 2, 3</string>
+    <string name="_100">100</string>
+    <string name="capacity">Capacity:</string>
+    <string name="bikes">Bikes:</string>
+    <string name="stands">Stands:</string>
+    <string name="mechanical_bikes">Mechanical Bikes:\n</string>
+    <string name="electrical_bikes">Electrical Bikes:</string>
+    <string name="electrical_internal_battery_bikes">Electrical internal battery bikes:</string>
+    <string name="electrical_removable_battery_bikes">Electrical removable battery bikes:</string>
+</resources>

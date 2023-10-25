@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/stationsFragment">
+
+    <fragment
+        android:id="@+id/stationsFragment"
+        android:name="com.example.stationsvelos.uikit.StationsFragment"
+        android:label="StationsFragment"
+        tools:layout="@layout/fragment_stations" />
+
+    <fragment
+        android:id="@+id/stationDetailFragment"
+        android:name="com.example.stationsvelos.uikit.StationDetailFragment"
+        android:label="StationDetailFragment"
+        tools:layout="@layout/fragment_station_detail">
+
+        <argument
+            android:name="station_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="contract_name"
+            app:argType="string" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_stationsFragment_to_stationDetailFragment"
+        app:destination="@id/stationDetailFragment" />
+
+</navigation>
