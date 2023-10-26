@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/bankingLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/banking"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/bankingCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:minWidth="48dp"
+        app:layout_constraintStart_toEndOf="@+id/bankingLabel"
+        app:layout_constraintTop_toTopOf="@+id/bankingLabel"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/bonusLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/bonus"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/bankingCheckBox"
+        app:layout_constraintTop_toTopOf="@+id/bankingLabel" />
+
+    <CheckBox
+        android:id="@+id/bonusCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:minWidth="48dp"
+        app:layout_constraintStart_toEndOf="@+id/bonusLabel"
+        app:layout_constraintTop_toTopOf="@+id/bankingLabel" />
+
+    <TextView
+        android:id="@+id/connectedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/connected"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/bonusCheckBox"
+        app:layout_constraintTop_toTopOf="@+id/bankingLabel" />
+
+    <CheckBox
+        android:id="@+id/connectedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        app:layout_constraintStart_toEndOf="@+id/connectedLabel"
+        app:layout_constraintTop_toTopOf="@+id/bankingLabel"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/numberLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectedLabel" />
+
+    <TextView
+        android:id="@+id/stationNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/numberLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationNumber" />
+
+    <TextView
+        android:id="@+id/stationName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/nameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/contractNameLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="@string/contract_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationName" />
+
+    <TextView
+        android:id="@+id/stationContractName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/contractNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/addressLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationContractName" />
+
+    <TextView
+        android:id="@+id/stationAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/addressLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/statusLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="@string/status"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationAddress" />
+
+    <TextView
+        android:id="@+id/stationStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/statusLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/lastUpdateLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_update"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationStatus" />
+
+    <TextView
+        android:id="@+id/stationLastUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/lastUpdateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/standAvailabilityTitle"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/stand_availability"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationLastUpdate" />
+
+    <TextView
+        android:id="@+id/capacityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:minWidth="70dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/standAvailabilityTitle"
+        app:layout_constraintTop_toTopOf="@+id/standAvailabilityTitle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/standAvailabilityContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#32FF5733"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standAvailabilityTitle"
+        tools:ignore="ExtraText">
+
+        <!-- Bikes -->
+        <TextView
+            android:id="@+id/bikesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/bikes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bikesValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bikesLabel"
+            tools:ignore="MissingConstraints,TextContrastCheck,VisualLintOverlap" />
+
+        <!-- Stands -->
+        <TextView
+            android:id="@+id/standsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/stands"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bikesLabel" />
+
+        <TextView
+            android:id="@+id/standsValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#455A64"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/standsLabel"
+            app:layout_constraintTop_toTopOf="@+id/standsLabel" />
+        tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:id="@+id/mechanicalBikesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/mechanical_bikes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/standsLabel" />
+
+        <TextView
+            android:id="@+id/mechanicalBikesValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/mechanicalBikesLabel"
+            app:layout_constraintTop_toTopOf="@+id/mechanicalBikesLabel" />
+
+
+        <!-- Electrical Bikes -->
+        <TextView
+            android:id="@+id/electricalBikesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/electrical_bikes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mechanicalBikesLabel" />
+
+        <TextView
+            android:id="@+id/electricalBikesValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/electricalBikesLabel"
+            app:layout_constraintTop_toTopOf="@+id/electricalBikesLabel" />
+
+        <!-- Electrical Internal Battery Bikes -->
+        <TextView
+            android:id="@+id/electricalInternalBatteryBikesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/electrical_internal_battery_bikes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/electricalBikesLabel" />
+
+        <TextView
+            android:id="@+id/electricalInternalBatteryBikesValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/electricalInternalBatteryBikesLabel"
+            app:layout_constraintTop_toTopOf="@+id/electricalInternalBatteryBikesLabel" />
+
+        <TextView
+            android:id="@+id/electricalRemovableBatteryBikesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/electrical_removable_battery_bikes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/electricalInternalBatteryBikesLabel" />
+
+        <TextView
+            android:id="@+id/electricalRemovableBatteryBikesValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/electricalRemovableBatteryBikesLabel"
+            app:layout_constraintTop_toTopOf="@+id/electricalRemovableBatteryBikesLabel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
