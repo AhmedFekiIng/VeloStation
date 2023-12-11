@@ -26,7 +26,7 @@ class StationsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_stations, container, false)
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         stationsAdapter = StationsAdapter { station ->
-            Log.d("StationsFragment", "Getting station detail for station number: ${station.number}, contract: ${station.contractName}")
+            Log.d("StationsFragment", "Get station detail for station number: ${station.number}, contract: ${station.contractName}")
             val action = StationsFragmentDirections.actionStationsFragmentToStationDetailFragment(stationId = station.number, contractName = station.contractName)
             findNavController().navigate(action)
         }

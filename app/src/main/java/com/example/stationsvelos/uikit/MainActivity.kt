@@ -13,7 +13,7 @@ import com.example.stationsvelos.R
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("MainActivity", "onCreate() called")
+        Log.d("MainActivity", "onCreate() call")
         supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 

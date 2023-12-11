@@ -13,7 +13,7 @@ class BikeRepository(private val apiKey: String) {
 
 
     suspend fun getStationDetail(stationId: Int, contractName: String): Station {
-        Log.d("ApiRequest", "Getting station detail for station number: $stationId, contract: $contractName")
+        Log.d("ApiRequest", "Get station detail for station number: $stationId, contract: $contractName")
         val stationDetail = apiService.getStationDetail(stationId, contractName, apiKey)
         Log.d("ApiRequest", "Received station detail: $stationDetail")
         return stationDetail

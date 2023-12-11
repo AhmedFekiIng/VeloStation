@@ -46,7 +46,7 @@ class StationDetailFragment : Fragment() {
         val stationId = arguments?.getInt(STATION_ID_KEY)
         val contractName = arguments?.getString(CONTRACT_NAME)
 
-        Log.d("StationDetailFragment", "Getting station detail for station number: $stationId, contract: $contractName")
+        Log.d("StationDetailFragment", "Get station detail for station number: $stationId, contract: $contractName")
 
         stationId?.let { id ->
             viewModel.getStationDetail(id, contractName ?: "")

@@ -7,6 +7,7 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 object RetrofitClient {
+    // JCDecaux API
     private const val BASE_URL = "https://api.jcdecaux.com/vls/v3/"
 
     val apiService: ApiService by lazy {
