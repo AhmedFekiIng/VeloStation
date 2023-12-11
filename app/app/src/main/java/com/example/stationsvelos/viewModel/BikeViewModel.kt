@@ -16,6 +16,7 @@ class BikeViewModel : ViewModel() {
     private val repository = BikeRepository(apiKey)
 
     private val _stations = MutableLiveData<List<Station>>()
+    // use of Live Data
     val stations: LiveData<List<Station>> get() = _stations
 
     private var isLoading = false

@@ -1,5 +1,6 @@
 package com.example.stationsvelos.api
 
+// API Data
 data class Station(
     val number: Int,
     val contractName: String,
